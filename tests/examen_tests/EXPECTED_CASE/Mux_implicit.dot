@@ -1,0 +1,16 @@
+
+digraph test {
+
+INPUT1 [LABEL = "INPUT"];
+INPUT2 [LABEL = "INPUT"];
+S [LABEL = "INPUT"];
+OUT [LABEL = "OUTPUT"];
+
+MUX1 [LABEL="MUX"];
+S -> MUX1;  // Select
+INPUT1 -> MUX1; // in1
+INPUT2 -> MUX1; // in2
+
+MUX1 -> OUT;
+
+}

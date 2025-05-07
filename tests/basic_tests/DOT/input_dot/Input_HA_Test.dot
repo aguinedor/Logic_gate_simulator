@@ -1,0 +1,19 @@
+digraph G {
+
+a [shape = plain, label = "input a"];
+b [shape = plain, label = "input b"];
+XOR2 [shape = invtriangle , label = "XOR2"];
+s [shape = plain, label = "output Sum"];
+a -> XOR2;
+b -> XOR2;
+XOR2 -> s;
+
+a [shape = plain, label = "input a"];
+b [shape = plain, label = "input b"];
+AND2 [shape = box , label = "AND2"];
+c [shape = plain, label = "output carry"];
+a -> AND2;
+b -> AND2;
+AND2 -> c;
+
+}

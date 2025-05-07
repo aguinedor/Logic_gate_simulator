@@ -1,0 +1,5 @@
+{signal: [
+  {name: "A",   wave: "0...1..."},
+  {name: "B",   wave: "0.1.0.1."},
+  {name: "C_in", wave: "01010101"},
+]}

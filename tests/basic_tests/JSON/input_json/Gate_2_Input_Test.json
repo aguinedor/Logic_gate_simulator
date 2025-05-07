@@ -1,0 +1,4 @@
+{ signal: [
+{ name : "input_a", value: "10010"},
+{ name : "input_b", value: "0..11"}
+]}

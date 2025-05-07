@@ -1,0 +1,19 @@
+digraph test {
+
+I [LABEL = "INPUT"];
+
+O1 [LABEL = "OUTPUT"];
+O2 [LABEL = "OUTPUT"];
+O3 [LABEL = "OUTPUT"];
+
+XOR_in [LABEL = "XOR2" ];
+
+FF_1 [LABEL = "FF" ];
+FF_2 [LABEL = "FF" ];
+
+I -> XOR_in -> O1 -> FF_1;
+O3 -> XOR_in;
+
+FF_1 -> O2 -> FF_2 -> O3;
+
+}

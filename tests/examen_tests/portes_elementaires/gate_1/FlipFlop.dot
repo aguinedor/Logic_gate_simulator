@@ -1,0 +1,11 @@
+digraph test {
+
+I1 [LABEL = "INPUT"];
+
+Bascule [LABEL = "FF"];
+
+O [LABEL = "OUTPUT"];
+
+I1 -> Bascule -> O;
+
+}

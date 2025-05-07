@@ -1,0 +1,15 @@
+digraph shift_register {
+
+I1 [LABEL = "INPUT"];
+
+Bascule1 [LABEL = "FF"];
+Bascule2 [LABEL = "FF"];
+Bascule3 [LABEL = "FF"];
+
+O [LABEL = "OUTPUT"];
+
+I1 -> Bascule1 ;
+Bascule1 -> Bascule2 ;
+Bascule2 -> Bascule3 -> O;
+
+}

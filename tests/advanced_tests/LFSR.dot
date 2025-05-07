@@ -1,0 +1,29 @@
+digraph shift_register {
+
+I [LABEL = "INPUT"];
+RESET [LABEL = "INPUT"];
+
+INIT_VALUE [LABEL = "OR2"];
+
+XOR [LABEL = "XOR2" ];
+
+Q1 [LABEL = "FF"];
+Q2 [LABEL = "FF"];
+Q3 [LABEL = "FF"];
+Q4 [LABEL = "FF"];
+
+O1 [LABEL = "OUTPUT"];
+O2 [LABEL = "OUTPUT"];
+O3 [LABEL = "OUTPUT"];
+O4 [LABEL = "OUTPUT"];
+O_init [LABEL = "OUTPUT"];
+
+I -> INIT_VALUE -> O_init -> Q1;
+RESET -> INIT_VALUE;
+
+Q1 -> XOR -> O1 -> Q2;
+Q2 -> O2 -> Q3;
+Q3 -> O3 -> Q4;
+Q4 -> O4 -> XOR;
+
+}

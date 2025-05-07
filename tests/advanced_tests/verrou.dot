@@ -1,0 +1,19 @@
+digraph test {
+
+S [LABEL = "INPUT"];
+R [LABEL = "INPUT"];
+
+AND1 [LABEL = "AND" ];
+AND2 [LABEL = "AND" ];
+NOT1 [LABEL = "NOT" ];
+NOT2 [LABEL = "NOT" ];
+
+Q [LABEL = "OUTPUT"];
+QB [LABEL = "OUTPUT"];
+
+S -> AND1 -> NOT1 -> Q;
+NOT1 -> AND2;
+
+R -> AND2 -> NOT2 -> QB;
+NOT2 -> AND1;
+}

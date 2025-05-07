@@ -1,0 +1,16 @@
+
+digraph test {
+
+I [LABEL = "INPUT"];
+
+GATE_1 [LABEL = "AND" ];
+GATE_2 [LABEL = "NOT" ];
+
+O [LABEL = "OUTPUT"];
+
+I -> GATE_1 ;
+GATE_1 -> GATE_2 ;
+GATE_2 -> O ;
+GATE_2 -> GATE_1 ;
+
+}

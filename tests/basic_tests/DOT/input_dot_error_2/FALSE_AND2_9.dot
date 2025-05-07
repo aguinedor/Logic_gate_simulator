@@ -1,0 +1,12 @@
+digraph test {
+
+I1 [LABEL = "INPUT"];
+I2 [LABEL = "INPUT"];
+
+GATE [LABEL = "AND2" ];
+
+O [LABEL = "INPUT"];
+I1 -> GATE -> O;
+I2 -> GATE;
+I2 -> I2;
+}

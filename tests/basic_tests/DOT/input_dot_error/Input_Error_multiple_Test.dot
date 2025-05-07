@@ -1,0 +1,9 @@
+digap h mo _graph {
+
+I1 [label =  "INP   UT "
+I2    [  label     = "INPUT"];
+
+GATE [label = "AND2" ];
+ 
+O [label = TE - O; 
+I2 -  > GATE;   

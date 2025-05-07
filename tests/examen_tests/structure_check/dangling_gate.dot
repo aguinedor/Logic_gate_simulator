@@ -1,0 +1,13 @@
+
+digraph test {
+
+I [LABEL = "INPUT"];
+
+GATE [LABEL = "NOT" ];
+dangling_GATE [LABEL = "NOT" ];
+
+O [LABEL = "OUTPUT"];
+
+I -> GATE -> O;
+
+}

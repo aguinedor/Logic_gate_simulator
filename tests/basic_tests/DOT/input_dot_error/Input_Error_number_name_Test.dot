@@ -1,0 +1,11 @@
+digraph test {
+
+9I1 [label = "INPUT"];
+I2 [label = "INPUT"];
+
+_GATE [label = "AND2" ];
+
+1O [label = "OUTPUT"];
+2I1 -> GATE -> O; 
+I2 -> GATE;
+}

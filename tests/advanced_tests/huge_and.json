@@ -1,0 +1,10 @@
+{ signal: [
+    { name : "A", value: "01111111"},
+    { name : "B", value: "101....."},
+    { name : "C", value: "1101...."},
+    { name : "D", value: "11101111"},
+    { name : "E", value: "11111011"},
+    { name : "F", value: "11111101"},
+    { name : "G", value: "11110111"}
+
+]}

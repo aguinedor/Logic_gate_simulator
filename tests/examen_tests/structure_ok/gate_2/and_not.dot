@@ -1,0 +1,17 @@
+
+digraph test {
+
+I1 [LABEL = "INPUT"];
+I2 [LABEL = "INPUT"];
+
+MY_AND [LABEL = "AND2" ];
+MY_NOT [LABEL = "NOT" ];
+
+O [LABEL = "OUTPUT"];
+
+I1 -> MY_AND -> MY_NOT;
+I2 -> MY_AND;
+
+MY_NOT -> O;
+
+}

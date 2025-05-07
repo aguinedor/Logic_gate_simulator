@@ -1,0 +1,27 @@
+digraph test {
+
+I1 [LABEL = "INPUT"];
+I2 [LABEL = "INPUT"];
+I3 [LABEL = "INPUT"];
+I4 [LABEL = "INPUT"];
+
+
+GATE1 [LABEL = "AND2" ];
+GATO2 [LABEL = "AND2" ];
+GATALITO1 [LABEL = "AND2" ];
+GATITA3 [LABEL = "AND35357303725" ];
+
+O1 [LABEL = "OUTPUT"];
+O2 [LABEL = "OUTPUT"];
+O3 [LABEL = "OUTPUT"];
+
+I1 -> GATE1 -> O1;
+ -> I2 -> GATE1 -> O1;
+O1 -> GATO2 -> O2;
+O1 -> GATO2 -> O2;
+O2 -> GATALITO1 -> O3;
+I3 -> GATALITO1 -> O3;
+O3 -> GATITA3 -> O1;
+I4 -> GATITA3 -> O1;
+
+}

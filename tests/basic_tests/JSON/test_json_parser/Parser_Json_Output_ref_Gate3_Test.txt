@@ -1,0 +1,6 @@
+input_a
+10011
+input_b
+00001
+input_c
+00010

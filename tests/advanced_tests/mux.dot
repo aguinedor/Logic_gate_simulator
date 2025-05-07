@@ -1,0 +1,19 @@
+digraph test {
+
+A [LABEL = "INPUT"];
+B [LABEL = "INPUT"];
+C [LABEL = "INPUT"];
+D [LABEL = "INPUT"];
+sel1 [LABEL = "INPUT"];
+sel2 [LABEL = "INPUT"];
+
+MUX1 [LABEL = "MUX", SEL = "sel1", SEL = "sel2"];
+
+O [LABEL = "OUTPUT"];
+
+A -> MUX1 -> O;
+B -> MUX1;
+C -> MUX1;
+D -> MUX1;
+
+}

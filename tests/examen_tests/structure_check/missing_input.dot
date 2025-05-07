@@ -1,0 +1,11 @@
+
+digraph test {
+
+
+GATE [LABEL = "NOT" ];
+
+O [LABEL = "OUTPUT"];
+
+GATE -> O;
+
+}

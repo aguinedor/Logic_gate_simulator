@@ -1,0 +1,40 @@
+digraph test {
+
+A [LABEL = "INPUT"];
+B [LABEL = "INPUT"];
+C [LABEL = "INPUT"];
+D [LABEL = "INPUT"];
+E [LABEL = "INPUT"];
+F [LABEL = "INPUT"];
+G [LABEL = "INPUT"];
+
+GATE1 [LABEL = "AND" ];
+GATE2 [LABEL = "AND" ];
+GATE3 [LABEL = "AND" ];
+GATE4 [LABEL = "AND" ];
+GATE5 [LABEL = "AND" ];
+GATE6 [LABEL = "AND" ];
+GATE7 [LABEL = "AND" ];
+GATE8 [LABEL = "AND" ];
+GATE9 [LABEL = "AND" ];
+
+S1 [LABEL = "OUTPUT"];
+S2 [LABEL = "OUTPUT"];
+
+C -> GATE1 -> GATE2;
+D -> GATE1 -> GATE6;
+B -> GATE2 -> GATE3 -> GATE4 -> GATE5;
+
+E -> GATE7 -> GATE8 -> S2;
+F -> GATE7;
+
+
+A -> GATE8;
+S2 -> GATE8;
+S2 -> GATE6;
+GATE6 -> GATE3;
+S2 -> GATE9 -> GATE5;
+GATE5 -> S1;
+G -> GATE4;
+G -> GATE9;
+}
